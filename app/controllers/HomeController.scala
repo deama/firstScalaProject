@@ -11,8 +11,4 @@ class HomeController @Inject()(cc: ControllerComponents, authAction: Authenticat
   {
     Ok( views.html.index("Your new application is ready.") )
   }
-
-  def index2() :Action[AnyContent] = Action { implicit request :Request[AnyContent] =>
-    Ok( views.html.index("THING") )
-  }
 }
